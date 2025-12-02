@@ -1,0 +1,11 @@
+Source: philips-vdi
+Section: unknown
+Priority: optional
+Maintainer: Development Team <devteam@openthinclient.com>
+
+Package: philips-vdi
+Architecture: amd64
+Description: Philips Speech Extensions driver
+ Enables support for special buttons of Philips devices in VDI sessions.
+ .
+ This package will be installed automatically as a dependency of supported VDI clients.
