@@ -1,3 +1,9 @@
+philips-vdi (2603.1) unstable; urgency=medium
+
+  * Fixed mounting of PhilipsDPM devices
+
+ -- Development Team <devteam@openthinclient.com>  Fri, 05 Jun 2026 13:59:29 +0200
+
 philips-vdi (2603) unstable; urgency=medium
 
   * Philips Speech Extensions 13.3.5
