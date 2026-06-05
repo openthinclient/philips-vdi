@@ -1,0 +1,14 @@
+[Unit]
+Description=Mount Philips DPM device /dev/%i
+BindsTo=dev-%i.device
+After=dev-%i.device
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+
+ExecStartPre=/usr/libexec/tcos-philips-dpm-mount-helper prepare
+ExecStart=/usr/bin/mount /dev/%i /tmp/PhilipsDPM
+
+ExecStop=/usr/bin/umount -l /tmp/PhilipsDPM
+ExecStopPost=/usr/libexec/tcos-philips-dpm-mount-helper cleanup
