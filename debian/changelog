@@ -1,6 +1,12 @@
+philips-vdi (2603.2) unstable; urgency=medium
+
+  * Fixed permissions for Philips DPM devices
+
+ -- Development Team <devteam@openthinclient.com>  Wed, 10 Jun 2026 15:33:34 +0200
+
 philips-vdi (2603.1) unstable; urgency=medium
 
-  * Fixed mounting of PhilipsDPM devices
+  * Fixed mounting of Philips DPM devices
 
  -- Development Team <devteam@openthinclient.com>  Fri, 05 Jun 2026 13:59:29 +0200
 
