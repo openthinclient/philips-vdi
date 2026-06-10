@@ -8,7 +8,7 @@ Type=oneshot
 RemainAfterExit=yes
 
 ExecStartPre=/usr/libexec/tcos-philips-dpm-mount-helper prepare
-ExecStart=/usr/bin/mount /dev/%i /tmp/PhilipsDPM
+ExecStart=/usr/bin/mount -t vfat -o flush,uid=1000,gid=1000 /dev/%i /tmp/PhilipsDPM
 
 ExecStop=/usr/bin/umount -l /tmp/PhilipsDPM
 ExecStopPost=/usr/libexec/tcos-philips-dpm-mount-helper cleanup
